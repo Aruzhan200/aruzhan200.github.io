@@ -14,7 +14,7 @@ html{
 }
 body{
     font-family: Inter, sans-serif;
-    background-color:  hwb(230 1% 82%);;
+    background-color:  hwb(230 1% 82%);
     color: white;
 }
 /*common styles*/
@@ -44,6 +44,9 @@ a{
     font-weight: 300;
 
 }
+
+
+
 .item_title{
     font-size: 1.6rem;
     color: white;
@@ -159,12 +162,14 @@ a{
 }
 
 /*Ref*/
-.ref_item{
+.comic_item{
     margin-top: 2rem;
 }
-.ref_name{
-    font-size: 1.6rem;
-    font-weight: 700;
+.comic_date{
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    color:var(--text-color);
+    font-weight: 300;
 }
 /*Education*/
 .edu_item{
