@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "type": "module",
-  "main": "dist/script.js",
+  "main": "docs/script.js",
   "scripts": {
     "build": "rollup --config rollup.config.js"
   },
