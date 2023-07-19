@@ -1,3 +1,5 @@
+import moment from 'moment';
+
 interface Comic {
     "month": string,
     "num": number,
@@ -28,8 +30,8 @@ async function getComicData(id) {
     comicTitle.innerHTML = comic.safe_title;
 
     const comicDate = document.getElementById('comicDate') as HTMLInputElement;
-    const dateNow = new Date() as Date;
-    comicDate.innerHTML = dateNow.toLocaleDateString();
+    const dateNow = moment(`${comic.year}-${comic.month}-${comic.day}`).fromNow();
+    comicDate.innerHTML = dateNow;
 
     const comicImage = document.querySelector('#comicImg') as HTMLImageElement;
     comicImage.src = comic.img;
